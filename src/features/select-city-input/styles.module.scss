@@ -1,0 +1,39 @@
+.wrapper {
+  position: relative;
+}
+
+.input {
+  margin-bottom: 10px;
+}
+
+.dropdown {
+  display: flex;
+  flex-direction: column;
+  max-height: 500px;
+  width: 500px;
+  border: 1px solid black;
+
+  &__item {
+    display: flex;
+    align-items: center;
+
+    background-color: transparent;
+    border: none;
+
+    margin-bottom: 5px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &__item__icon {
+    width: 32px;
+    margin-right: 10px;
+    border: 1px solid black;
+  }
+}
