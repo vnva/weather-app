@@ -4,6 +4,7 @@ export type TRawCity = {
   latitude: number;
   longitude: number;
   country_code: string;
+  timezone: string;
   admin1?: string;
 };
 

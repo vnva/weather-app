@@ -11,5 +11,6 @@ export type TCity = {
   latitude: number;
   longitude: number;
   countryCode: string;
+  timeZone: string;
   admins: string[];
 };

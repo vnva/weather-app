@@ -1,8 +1,9 @@
+import { TCity } from '../../city/model/types';
+
 export type TWeatherInitialState = {
   isLoading: boolean;
   weather: TWeather | null;
-  longitude: number | null;
-  latitude: number | null;
+  city: TCity | null;
 };
 
 export type TWeather = {

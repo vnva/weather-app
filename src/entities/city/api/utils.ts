@@ -3,7 +3,8 @@ import { TCity } from '../model/types';
 import { TRawCity } from './types';
 
 export function mapCity(data: TRawCity): TCity {
-  const { id, name, longitude, latitude, country_code, admin1 } = data;
+  const { id, name, longitude, latitude, country_code, admin1, timezone } =
+    data;
 
   const admins = [];
 
@@ -16,5 +17,6 @@ export function mapCity(data: TRawCity): TCity {
     latitude,
     countryCode: country_code,
     admins,
+    timeZone: timezone,
   };
 }
